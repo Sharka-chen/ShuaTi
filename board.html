@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>公告与留言</title>
+		<link rel="stylesheet" type="text/css" href="css/board.css"/>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="board">
+			<!-- 留言框 -->
+			<div id="message">
+				<div class="headertip"><span>留言</span></div>
+				<form action="" method="">
+					<input type="text" id=""/>
+					<textarea class="inputMessage" style="resize: none; height: 100px; width: 874px;" placeholder="请输入留言内容" v-model:value="inputMsg"></textarea>
+					<div class="btns">
+						<button type="submit" >确定</button>
+						<button type="button" @click="cancel()">取消</button>
+					</div>
+				</form>
+				
+				<ul>
+					<li>
+						<!-- 用户的头像以及用户名 -->
+						<div class="userinformation">
+							<img src="img/regest/img8.jpg" class="userImg">
+							<div class="userName">hhhh</div>
+						</div>
+						<!-- 留言内容 -->
+						<div class="userMsg">
+							<span>dawdiwoawidwiuqdwd</span>
+						</div>
+						<!-- 时间  点赞  踩 -->
+						<div class="express">
+							<span>2020-02-06</span>
+							<div class="upAndDown">
+								<img src="img/board/up.png" class="upDownImg"/>0
+								<img src="img/board/down.png" class="upDownImg"/>0
+							</div>
+							
+						</div>
+					</li>
+					
+					<li>
+						<!-- 用户的头像以及用户名 -->
+						<div class="userinformation">
+							<img src="img/regest/img8.jpg" class="userImg">
+							<div class="userName">hhhh</div>
+						</div>
+						<!-- 留言内容 -->
+						<div class="userMsg">
+							<span>dawdiwoawidwiuqdwd</span>
+						</div>
+						<!-- 时间  点赞  踩 -->
+						<div class="express">
+							<span>2020-02-06</span>
+							<div class="upAndDown">
+								<img src="img/board/up.png" class="upDownImg"/>0
+								<img src="img/board/down.png" class="upDownImg"/>0
+							</div>
+							
+						</div>
+					</li>
+					
+					<li>
+						<!-- 用户的头像以及用户名 -->
+						<div class="userinformation">
+							<img src="img/regest/img8.jpg" class="userImg">
+							<div class="userName">hhhh</div>
+						</div>
+						<!-- 留言内容 -->
+						<div class="userMsg">
+							<span>dawdiwoawidwiuqdwd</span>
+						</div>
+						<!-- 时间  点赞  踩 -->
+						<div class="express">
+							<span>2020-02-06</span>
+							<div class="upAndDown">
+								<img src="img/board/up.png" class="upDownImg"/>0
+								<img src="img/board/down.png" class="upDownImg"/>0
+							</div>
+							
+						</div>
+					</li>
+					
+					<li>
+						<!-- 用户的头像以及用户名 -->
+						<div class="userinformation">
+							<img src="img/regest/img8.jpg" class="userImg">
+							<div class="userName">hhhh</div>
+						</div>
+						<!-- 留言内容 -->
+						<div class="userMsg">
+							<span>dawdiwoawidwiuqdwd</span>
+						</div>
+						<!-- 时间  点赞  踩 -->
+						<div class="express">
+							<span>2020-02-06</span>
+							<div class="upAndDown">
+								<img src="img/board/up.png" class="upDownImg"/>0
+								<img src="img/board/down.png" class="upDownImg"/>0
+							</div>
+							
+						</div>
+					</li>
+					
+					<li>
+						<!-- 用户的头像以及用户名 -->
+						<div class="userinformation">
+							<img src="img/regest/img8.jpg" class="userImg">
+							<div class="userName">hhhh</div>
+						</div>
+						<!-- 留言内容 -->
+						<div class="userMsg">
+							<span>dawdiwoawidwiuqdwd</span>
+						</div>
+						<!-- 时间  点赞  踩 -->
+						<div class="express">
+							<span>2020-02-06</span>
+							<div class="upAndDown">
+								<img src="img/board/up.png" class="upDownImg"/>0
+								<img src="img/board/down.png" class="upDownImg"/>0
+							</div>
+							
+						</div>
+					</li>
+					
+				</ul>
+				
+			</div>
+			<!-- 公告栏 -->
+			<div id="bulletin">
+				<div class="notices">
+					<div class="headertip"><span>公告</span></div>
+					<!-- 公告的内容 v-for -->
+					<ul>
+						<li>
+							<h3><a>标题</a></h3>
+							<div class="details">
+								<div class="info">简单介绍</div>
+								<p>时间</p>
+							</div>
+						</li>
+						<li>
+							<h3><a>标题</a></h3>
+							<div class="details">
+								<div class="info">简单介绍</div>
+								<p>时间</p>
+							</div>
+						</li>
+						<li>
+							<h3><a>标题</a></h3>
+							<div class="details">
+								<div class="info">简单介绍</div>
+								<p>时间</p>
+							</div>
+						</li>
+						<li>
+							<h3><a>标题</a></h3>
+							<div class="details">
+								<div class="info">简单介绍</div>
+								<p>时间</p>
+							</div>
+						</li>
+						<li>
+							<h3><a>标题</a></h3>
+							<div class="details">
+								<div class="info">简单介绍</div>
+								<p>时间</p>
+							</div>
+						</li>
+						<li>
+							<h3><a>标题</a></h3>
+							<div class="details">
+								<div class="info">简单介绍</div>
+								<p>时间</p>
+							</div>
+						</li>
+						<li>
+							<h3><a>标题</a></h3>
+							<div class="details">
+								<div class="info">简单介绍</div>
+								<p>时间</p>
+							</div>
+						</li>
+						<li>
+							<h3><a>标题</a></h3>
+							<div class="details">
+								<div class="info">简单介绍</div>
+								<p>时间</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<footer>
+			<div class="copyright">© 2020 imooc.com  京ICP备 12003892号-11 京公网安备11010802030151号 营业执照</div>
+		</footer>
+	</body>
+	<script src="js/board.js" type="text/javascript" charset="utf-8"></script>
+</html>

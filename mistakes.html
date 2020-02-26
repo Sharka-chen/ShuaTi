@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>错题集</title>
+<link rel="stylesheet" href="css/mistakes.css">
+</head>
+<body>
+<div id="showArea">
+	<div id="mistakeItem">
+		<div class="topic">
+			<span>{{item.topic}}</span>
+		</div>
+		<div class="optionList">
+			<div class="opt">A:{{JSON.parse(item.optionList)[0]}}</div>
+			<div class="opt">B:{{JSON.parse(item.optionList)[1]}}</div>
+			<div class="opt">C:{{JSON.parse(item.optionList)[2]}}</div>
+			<div class="opt">D:{{JSON.parse(item.optionList)[3]}}</div>
+		</div>
+		<div class="pd">
+			<div class="opt">A:对</div> 
+			<div class="opt">B:错</div>
+		</div>
+		<div class="imformation">
+			<span>正确答案是 {{item.result}}</span> 
+			<span>所在章节 {{item.chapter}}</span>
+			<span>做错时间 {{item.updateTime}}</span>
+			<span>难度等级是 {{item.difficulty}}</span> 
+		</div>
+	</div>
+		
+			
+
+
+</div>	
+
+</body>
+</html>

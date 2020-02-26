@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册页面</title>
+		<link rel="stylesheet" type="text/css" href="css/regest.css"/>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="regestweb">
+			<div :class="{ cross: Across, 'crosss': Acrossa}" @mouseover="changecross" @mouseleave="changecross()"></div>
+			<div id="regest_area">
+				<div id="title_wap">
+					<span>用户注册</span>
+					<a href="loging.html">我有账号，去登录</a>
+				</div>
+				<form action="" enctype="multipart/form-data" method="post" class="regestform">
+					<input type="text" name="email" placeholder="请输入可用邮箱，用于激活登录" class="inputArea" v-model:value="email"/>
+					<label class="emailTip" ref="emailAlert">{{emailAlert}}</label>
+					<input type="text" name="emailcode" placeholder="请输入验证码" class="inputArea"/><br>
+					<a class="noCode">无法获取验证码?</a>
+					<input type="button" id="getCode" value="获取验证码" class="inputArea" @click="sendEmail();" ref="getCode"/>
+					<input type="text" name="username" placeholder="请设置的用户名" class="inputArea"/>
+					<input type="password" name="password" placeholder="请设置密码" v-model="pwd1" class="inputArea"/>
+					<label class="pwdTip" ref="pwdTip">密码不一致!</label>
+					<input type="password" name="passwordsure" placeholder="确定密码" v-model="pwd2" class="inputArea"/><br>
+					<input type="file" name="file" id="fileInput" @change="uploadImg($event)" ref="getfilename" value="" />
+					<label class="fileTip" for="fileInput" >+</label>
+					<div class="fileTip2">
+						<div class="tip3">选择图片作头像(点击右边图片可更换随机图片)<span ref="setfilename">img1.jpg</span></div>
+						<img src="./img/regest/img1.jpg" class="accountImg" ref="accountImg" @click="getNum();">
+					</div>
+					<input type="button" value="注册" id="regestbtn" @click="registered();" class="inputArea"/></br>
+				</form>
+			</div>
+		</div>
+		
+		<!--  -->
+	</body>
+	<script src="./js/regest.js" type="text/javascript" charset="utf-8"></script>
+</html>

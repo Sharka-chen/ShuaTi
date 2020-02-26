@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>登陆界面</title>
+		<link rel="stylesheet" href="css/loging.css"/>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>	
+	</head>
+	<body>
+		<div id="loginweb">
+			<div id="logining_area">
+				<div :class="{ cross: Across, 'crosss': Acrossa}" @mouseover="changecross" @mouseleave="changecross()"></div>
+				<div id="logining_box">
+					<div class="title_wap">
+						<span>用户登录</span>
+					</div>
+					<form action="" method="post">
+						<input type="text" name="username" class="user" placeholder="请输入登录邮箱/用户名"/>
+						<input type="password" name="userpwd" class="user" placeholder="请输入密码"/>
+						<input type="text" name="code" class="code" placeholder="请输入验证码"/>
+						<div class="forgetpwd">
+							<a class="blue">忘记密码?</a>
+							<div class="regest_wap_right">
+								还没有账号？
+								<a class="blue" href="regest.html">立即注册</a>
+							</div>
+						</div>
+						<button type="submit" class="login_btn">登录</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+</html>

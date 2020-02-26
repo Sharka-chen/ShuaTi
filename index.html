@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="css/index/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index/content.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/loging.css"/>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body >
+		<!-- 导航条内容 -->
+		<div id="index">
+		<header>
+			<div class="nav">
+				<div id="logo">WTU刷题网</div>
+				<div class="login_regest nav_float">
+					<div class="account_btn " @click="gologin()">登录</div>
+					<div class="account_btn ">注册</div>
+				</div>
+				<div class="nav_content nav_float">
+					<ul class="thefont nav_ul">
+						<li class="nav_li"><a @click="goToDetail();">首页</a></li>
+						<li class="nav_li"><a @click="goToDetail();">实战</a><img src="img/index/trangle.png" class="trangle"/></li>
+						<li class="nav_li"><a @click="goToDetail();">题库</a></li>
+						<li class="nav_li"><a href="#" >帮助中心</a></li>
+						<li class="nav_li"><a href="#">关于我们</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</header>
+		<!-- 大图片的div内容 -->
+		<div id="idendify">
+			<div class="posi_abc">
+				<div class="second_font">更智能的在线考试系统</div>
+				<div class="second_font">让考试更简单</div>
+				<div class="third_font">最畅销的考试系统，比你想象中更稳定</div>
+				<div class="third_font">智能组卷、智能防作弊、强大统计分析让您轻松组织考试</div>
+			</div>
+		</div>
+		<!-- 功能的介绍 -->
+		<div id="component">
+			<div class="com_intro">满足多种业务场景</div>
+			<ul class="com_ul">
+				<li class="com_float">考试考核</li>
+				<li class="com_float">题库刷题</li>
+				<li class="com_float">知识竞赛</li>
+				<li class="com_float">报考系统</li>
+				<li class="com_float">问卷调查</li>
+				<li class="com_float">电子作业</li>
+				<li class="com_float">闯关答题</li>
+				<li class="com_float">局域网智能考试</li>
+			</ul>
+		</div>
+
+
+		<footer>
+				<ul class="footerCon">
+					<li>企业合作</li>
+					<li>联系我们</li>
+					<li>意见反馈</li>
+					<li>友情链接</li>
+					<li>帮助中心</li>
+					<li>关于我们</li>
+				</ul>
+				<div class="copyright">© 2020 imooc.com  京ICP备 12003892号-11 京公网安备11010802030151号 营业执照</div>
+		</footer>
+		
+		<!-- 登录界面 -->
+		<div id="loginweb" v-show="logining">
+			<div id="logining_area">
+				<div :class="{ cross: Across, 'crosss': Acrossa}" @mouseover="changecross" @mouseleave="changecross()" @click="nologin()"></div>
+				<div id="logining_box">
+					<div class="title_wap">
+						<span>用户登录</span>
+					</div>
+					<form action="" method="post">
+						<input type="text" name="username" class="user" placeholder="请输入登录邮箱/用户名"/>
+						<input type="password" name="userpwd" class="user" placeholder="请输入密码"/>
+						<input type="text" name="code" class="code" placeholder="请输入验证码"/>
+						<div class="forgetpwd">
+							<a class="blue">忘记密码?</a>
+							<div class="regest_wap_right">
+								还没有账号？
+								<a class="blue" href="regest.html">立即注册</a>
+							</div>
+						</div>
+						<button type="submit" class="login_btn">登录</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		</div>
+	</body>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</html>

@@ -1,0 +1,27 @@
+footer{
+	height: 80px;
+	width: 1518px;
+	background: #F8FAFC;
+	box-sizing: border-box;
+	border: #B0B1B1 1px solid;
+	
+}
+.footerCon{
+	color: #B0B1B1;
+	font-size: 14px;
+	width: 600px;
+	height: 60px;
+	margin: 0 auto;
+}
+.footerCon>li{
+	width: 100px;
+	line-height: 60px;
+	text-align: center;
+}
+.copyright{
+	width: 700px;
+	height: 15px;
+	margin: 0 auto;
+    text-align: center;
+    font-size: 10px;
+}

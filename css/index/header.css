@@ -1,0 +1,82 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+header{
+	width: 1518px;
+	height: 72px;
+	background: #F1FBFB;
+}
+.nav{
+	width: 1220px;
+	height: 72px;
+	margin: 0 auto;
+}
+#logo{
+	width: 260px;
+	height: 100%;
+	float: left;
+	font-size: 42px;
+	font-family: "MS UI Gothic";
+	color: #4B81A3;
+	line-height: 72px;
+	text-align: center;
+}
+.nav_float{
+	float: right;
+}
+.nav_content{
+	margin: 0 20px 0 0;
+}
+ul{
+	list-style: none;
+}
+li{
+	float: left;
+}
+.nav_li{
+	/*width: 80px; */
+	height: 72px;
+	line-height: 72px;
+	padding: 0 22px;
+	text-align: center;
+	font-size: 18px;
+}
+.nav_li>a:hover{
+	color: #4B81A3;
+	border-bottom: #4B81A3 1.5px solid;
+}
+.nav_li>a{
+	/*height: 40px;*/
+	text-decoration: none;
+	color: #424641;
+}
+.nav_ul{
+	height: 72px;
+}
+.thefont{
+	color: #424641;
+	font-size: 18px;
+	font-weight: 300;
+	text-decoration: none;
+}
+/* 下三角 */
+.trangle{
+	position: absolute;
+	top: 30px;
+	width: 14px;
+	height: 14px;
+	opacity: 0.8;
+}
+.account_btn{
+	width: 80px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	/*border: 1px solid #4B81A3;*/
+	border-radius: 5px;
+	float: left;
+	background: #4B81A3;
+	color: #ffffff;
+	margin: 20px 8px 0 0;
+}
